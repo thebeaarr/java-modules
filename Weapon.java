@@ -22,6 +22,6 @@ public class Weapon extends Item
 	@Override 
 	public String toString()
 	{
-		return super.toString() + " type : " + type ;
+		return super.toString() + " type : " + this.type  + " damage : " + this.damage;
 	}
 }

@@ -12,7 +12,14 @@ public class Inventory
 	{
 		items.add(item);
 	}
-
+	public void addItem(String name ,int quantity , String type)
+	{
+		items.add(new Fruit(type,  name  , quantity));
+	}
+	public void addItem(String name ,int quantity , String type , int damage)
+	{
+		items.add(new Weapon(name , quantity , type , damage));
+	}
 	public void displayInventory()
 	{
 		for(Item item : items )

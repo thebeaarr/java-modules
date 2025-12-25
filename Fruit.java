@@ -10,4 +10,10 @@ public class Fruit extends Item{
 	{
 		return this.type ;
 	}
+
+	@Override
+	public String toString()
+	{
+		return super.toString() + " type : " + this.type ;
+	}
 }
