@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class enrollement 
 {
 	private String studentid ; 
@@ -9,11 +11,11 @@ class enrollement
 		this.course = course ;
 	}
 
-	public setCourse(String course)
+	public void setCourse(String course)
 	{
 		this.course = course ;
 	}
-	public setStudentid(String studentid)
+	public void setStudentid(String studentid)
 	{
 		this.studentid = studentid ;
 	}
@@ -26,8 +28,9 @@ public class PersonnelAdministartif extends Person
 	private String poste ; // position 
 	private int bureau ; // office number
 	private ArrayList<enrollement> enrols ; 
-	public PersonnelAdministartif(String poste , int bureau)
+	public PersonnelAdministartif(String nom , String prenom , String cin , int age , String poste , int bureau)
 	{
+		super(nom , prenom  , cin , age );
 		this.poste = poste ;
 		this.bureau = bureau;
 		this.enrols = new ArrayList<>();
