@@ -16,4 +16,10 @@ public class Fruit extends Item{
 	{
 		return super.toString() + " type : " + this.type ;
 	}
+
+	@Override
+	public void DisplayInfo()
+	{
+		System.out.println(this);
+	}
 }
