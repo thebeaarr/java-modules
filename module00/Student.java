@@ -1,6 +1,9 @@
 
 import java.util.ArrayList;
 
+
+
+
 class Course {
 	private String course;
 	private float note;
@@ -58,7 +61,7 @@ public class Student extends  Person
 	public String toString()
 	{
 		StringBuilder sb = new StringBuilder();
-		sb.append(super.toString()).append("\nnumeroEtudiant : ").append(this.numeroEtudiant).append("\nFillier : ").append(this.filiere).append("\nNiveau : ").append(this.niveau).append("\n");
+		sb.append(super.toString()).append("\nnumeroEtudiant : ").append(this.numeroEtudiant).append("\nFillier : ").append(this.filier).append("\nNiveau : ").append(this.niveau).append("\n");
 		for(Course c : this.courses)
 		{
 			sb.append("  -  ").append(c.getCourse()).append("\nNote :").append(c.getNote()).append("\n");

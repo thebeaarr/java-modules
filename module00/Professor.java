@@ -58,5 +58,4 @@ public class Professor extends Person
 	{
 		System.out.println(this);
 	}
-
 }
