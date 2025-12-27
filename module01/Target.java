@@ -108,6 +108,8 @@ public class Target
 	// 	System.out.println("Found " + openPorts.size() + " open ports: " + openPorts);
 	// }
 	// this can be imporved in another project but we will just make random 
+	// for the part of vulns detection this is just a fake part im not in the process of detecting the vuls yet
+	
 	public void detectVulnerabilities()
 	{
 		for(int port : this.openPorts)
